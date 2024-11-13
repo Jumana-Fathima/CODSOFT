@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible"content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c1c6ac3dca.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header id="header">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-content">
+                <div class="header-text">
+                    <h1>Hi, I'm <span>Jumana Fathima</span></h1>
+                    <h2>Junior Front-end Developer</h2>
+                </div>
+                <div class="image">
+                    <img src="images/jumz.jpeg" alt="Jumana Fathima">
+                </div>
+            </div>
+        </header>
+        <hr>
+        <!---------------about--------------->
+        <div id="About">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col1">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hi, I’m Jumana Fathima, a junior front-end developer and a pre-final year college student. I’m currently deepening my skills in HTML, CSS, and JavaScript, as I explore the world of front-end development. I love bringing ideas to life with clean, user-friendly designs and am dedicated to growing my expertise every day. While I’m focused on front-end right now, I’m excited to eventually learn back-end development to become a well-rounded web developer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!---------------skills--------------->
+        <div id="Skills">
+            <div class="container">
+                <h1 class="sub-title">My Skills</h1>
+                <div class="skills-list">
+                    <div>
+                        <i class="fa-solid fa-file-code"></i>
+                        <h4>HTML & CSS</h4>
+                        <p>I'm a budding front-end developer with a growing proficiency in HTML and CSS.With a foundational grasp of HTML and CSS,I'm eager to expand my skills as a front-end developer.</p>
+                        
+                    </div>
+                    <div> 
+                        <i class="fa-brands fa-python"></i>   <i class="fa-brands fa-java"></i>
+                        <h4>JAVA & PYTHON</h4>
+                        <p>I have strong Python and Java skills, with experience in data analysis, web development, automation, and object-oriented programming.</p>
+                        
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-gears"></i>
+                        <h4>SOFT SKILLS</h4>
+                        <p>I'm great at communication, working with teams, and taking on leadership roles. I enjoy collaborating, solving problems, and staying flexible to get things done efficiently in any situation.</p>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <hr>
+<!---------------------projects----------------------->
+        <div id="Projects">
+            <h1>My Projects</h1>
+            <div class="Project-container">
+                <div class="container">
+                    <img src="images/tooo.jpeg" alt="">
+                    <h3><br>To-Do-List</h3>
+
+                    
+
+                    <p>I created a responsive To-Do List application using HTML, CSS, and JavaScript. It allows users to add, edit, and remove tasks, providing a simple and interactive way to manage their daily activities."</p>
+                
+                </div>
+                <div class="container">
+                    <img src="images/screenshot.png" alt="">
+
+                    <h3><br>Instagram Clone Login Page</h3>
+                    
+                    <p>I developed this Instagram login page replica using HTML and CSS, focusing on both the layout and design details to match the original as closely as possible.</p>
+
+                    <p>Working on this project helped me understand the structure of a modern login interface and improved my skills in using CSS for responsive styling. It was a great exercise in layout management and visual consistency.</p>
+                </div>
+            
+            </div>
+        </div>
+        <hr>
+<!-----------contact----------------------->
+
+        <div id="Contact">
+            <h1>Contact Me</h1>
+            <div class="Contact-container">
+                    <div class="contact-left">
+                        <p><i class="fa-solid fa-envelope"></i>jumana.engr@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>9342625016</p>
+                        <div class="social-icons">
+                            <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="images/myresume.pdf"  download class="btn btn2">Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                            <button type="submit">Submit</button>
+
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class=" copyright">
+                <p>© 2024 Jumana Fathima. All rights reserved.</p>
+            </div>
+
+        </div>
+        <hr>
+
+    </body>
+    <script>
+        const scriptURL = '<>https://script.google.com/macros/s/AKfycbys6ZGVfD1dag08G2q96XflgZ91Gm-ZKCd8gbbNI_TebM0TbgiZJWvt-v8wCIlkWR3O/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+                
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</html>
