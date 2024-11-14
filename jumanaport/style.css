@@ -9,124 +9,123 @@ body{
     Color:#FFFFFF;
 }
 #header{
-    padding: 20px 0; /* Add padding to the header */
-    text-align: left; /* Center the navigation */
+    padding: 20px 0; 
+    text-align: left; 
 }
 
 /* Navigation Styles */
 
 nav {
-    text-align: left; /* Align navigation to the left */
-    margin-bottom: 5px; /* Space between nav and header content */
-    padding-left: 5px; /* Add space to the left of the nav */
+    text-align: left; 
+    margin-bottom: 5px; 
+    padding-left: 5px; 
 }
 nav ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
 }
 
 nav ul li {
-    display: inline; /* Horizontal layout for menu items */
-    margin-right: 20px; /* Spacing between items */
-    position: relative; /* Allow positioning for the pseudo-element */
+    display: inline; 
+    margin-right: 20px; 
+    position: relative; 
 }
 
 nav ul li a {
-    text-decoration: none; /* Remove underline from links */
-    color:#fff; /* Link color */
-    padding: 5px 0; /* Add vertical padding */
-    transition: color 0.3s; /* Smooth color transition */
-    font-family: 'Poppins',sans-serif; /* Change font family */
-    font-size: 18px; /* Change font size */
-    font-weight: bold; /* Optional: Make font bold*/
+    text-decoration: none; 
+    color:#fff; 
+    padding: 5px 0; 
+    transition: color 0.3s; 
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px; 
+    font-weight: bold; 
 }
 
 nav ul li a:hover {
-    color: rgb(21, 113, 155); /* Change color on hover */
+    color: rgb(21, 113, 155); 
 }
 
 /* Underline Effect */
 nav ul li a::after {
-    content: ""; /* Empty content for the pseudo-element */
-    display: block; /* Make it a block element */
-    width: 100%; /* Full width */
-    height: 2px; /* Thickness of the underline */
-    background: transparent; /* Default background */
-    transition: background 0.3s; /* Smooth transition for the background */
-    position: absolute; /* Position it absolutely */
-    bottom: -5px; /* Position it below the text */
-    left: 0; /* Align to the left */
+    content: ""; 
+    display: block; 
+    width: 100%; 
+    height: 2px; 
+    background: transparent; 
+    transition: background 0.3s; 
+    position: absolute; 
+    bottom: -5px; 
+    left: 0; 
 }
 
 nav ul li a:hover::after {
-    background:  rgb(21, 113, 155); /* Change background color on hover */
+    background:  rgb(21, 113, 155); 
 }
 
 
 .header-content {
-    display: flex; /* Use flexbox for two-column layout */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    padding: 20px; /* Add padding around the content */
-    max-width: 1200px; /* Limit the max width */
-    margin: 0 auto; /* Center the content */
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    padding: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
     font-size:50px;
 }
 
 .header-text h1 {
-    font-size: 36px; /* Adjust to a smaller size */
-    line-height: 1.2; /* Adjust line height for spacing */
-    font-weight: bold; /* Keep it bold for emphasis */
+    font-size: 36px; 
+    line-height: 1.2; 
+    font-weight: bold; 
 }
 
-/* Adjust the color for the highlighted name */
 .header-text h1 span {
     color: rgb(21, 113, 155);
     font-weight: bold;
-    font-size: inherit; /* Keep it the same size as the rest of the text */
+    font-size: inherit; 
 }
 
 .header-text h1 {
-    font-size: 50px; /* Adjust to your preference */
+    font-size: 50px; 
     font-weight: bold;
 }
 
 .header-text h1 span {
-    color: rgb(21, 113, 155); /* Style the name separately */
+    color: rgb(21, 113, 155); 
 }
 
 .header-text h2 {
-    font-size: 40px; /* Adjust this for a smaller subtitle */
-    font-weight: normal; /* Adjust font weight if needed */
-    margin-top: 5px; /* Adds space between lines */
-    color: #fff; /* Optional: a lighter color for the subtitle */
+    font-size: 40px;
+    font-weight: normal; 
+    margin-top: 5px; 
+    color: #fff; 
 }
 
 
 
 .image {
-    flex: 1; /* Takes up the other 50% */
-    display: flex; /* Center the image within this column */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    flex: 1; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
 }
 
 .image {
-    width: 160px;           /* Set the container width */
-    height: 490px;          /* Set the container height */
-    overflow: hidden;       /* Hide any overflow (cutoff parts) */
+    width: 160px;           
+    height: 490px;         
+    overflow: hidden;       
     display: flex;
-    justify-content: center; /* Center image horizontally */
-    align-items: center;    /* Center image vertically */
+    justify-content: center;
+    align-items: center;    
     
 }
 
 .image img {
-    width: 100%;            /* Ensure image fills the container width */
-    height: 100%;           /* Ensure image fills the container height */
-    object-fit: cover;      /* Ensure image covers the entire circle */
-    object-position:bottom;   /* Shift image to the top if the bottom is getting cropped */
+    width: 100%;            
+    height: 100%;           
+    object-fit: cover;      
+    object-position:bottom;   
 }
 
 
@@ -134,14 +133,14 @@ nav ul li a:hover::after {
 #About{
     padding:10px 0;
     color:rgb(7, 7, 7);
-    margin: 40px 0; /* Space between sections */
+    margin: 40px 0; 
     margin-top: 20px;
     
 }
 .container {
-    max-width: 1200px; /* Maximum width for each section */
-    margin: 0 auto; /* Center-align the container */
-    padding: 20px; /* Inner padding for spacing */
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px; 
 }
 
 .row{
@@ -161,7 +160,7 @@ nav ul li a:hover::after {
     margin-top: 20px;
 }
 #About .about-col1 p {
-    margin-top: 20px; /* Adds space above the paragraph */
+    margin-top: 20px; 
 }
 
 /*-----------------skills--------*/
@@ -269,8 +268,8 @@ nav ul li a:hover::after {
     flex-shrink:1;
 }
 #Projects .container p {
-    margin-top: 10px; /* Adjust this value for more or less space */
-    text-align: center; /* Optional: Center-aligns the paragraph text */
+    margin-top: 10px; 
+    text-align: center;
 }
 
 @media(min-width:768px){
@@ -312,25 +311,23 @@ nav ul li a:hover::after {
 .contact-right{
     flex-basis:55%;
 }
-/* Adjust alignment of contact info */
 .contact-left {
-    padding-left: 25px; /* Align this with "Contact Me" header */
+    padding-left: 25px; 
 }
 
-/* Add space between email and mobile number */
 .contact-left p {
-    margin-bottom: 15px; /* Space between items */
+    margin-bottom: 15px;
 }
 
 .contact-right form {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    gap: 15px; /* Add space between each input */
+    flex-direction: column; 
+    gap: 15px; 
 }
 
 .contact-right form input,
 .contact-right form textarea {
-    width: 100%; /* Make input fields full-width */
+    width: 100%; 
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -338,7 +335,7 @@ nav ul li a:hover::after {
 }
 
 .contact-right form button {
-    align-self: center; /* Center the Submit button */
+    align-self: center; 
     padding: 10px 20px;
     background-color: rgb(21, 113, 155);
     color: #fff;
@@ -376,20 +373,20 @@ nav ul li a:hover::after {
 }
 
 .btn {
-    display: inline-block; /* Make it behave like a button */
-    padding: 10px 20px; /* Add some padding */
-    background-color: rgb(21, 113, 155); /* Background color */
-    color: #fff; /* Text color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners */
-    font-weight: bold; /* Optional: Make text bold */
-    transition: background-color 0.3s; /* Smooth transition for hover */
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: rgb(21, 113, 155); 
+    color: #fff;
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    transition: background-color 0.3s; 
     font-size: 16px;
     margin-top: 20px;
 }
 
 .btn:hover {
-    background-color: darken(rgb(21, 113, 155), 10%); /* Darker shade on hover */
+    background-color: darken(rgb(21, 113, 155), 10%); 
 }
 
 .copyright{
